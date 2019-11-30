@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(145, 93, 77);
+  }
+.content {
+    display: flex;
+    margin: 25px;
+    position: absolute;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1{
+      position: centre, absolute;
+      margin: auto;
+width: 50%;
+border: 3px solid  rgb(70, 26, 41);
+padding: 10px;
+text-align: center;
+  }
+  p{
+    position: centre, absolute;
+    margin-left: 30%;
+    margin-right: 30%;
+width: 40%;
+border: 3px solid goldenrod;
+padding: 10px;
+text-align: center;
+}    
