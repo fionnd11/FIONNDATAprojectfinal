@@ -17,8 +17,8 @@ import { UserService } from '../../services/user.service';
 export class SearchComponent implements OnInit {
 form: FormGroup;
   levels = [
-    "Beginner",
-    "Expert",
+    "Premier League",
+    "EFL championship",
   ];
 @Output() groupFilters: EventEmitter<any> = new EventEmitter<any>();
 searchText: string = '';
@@ -31,7 +31,7 @@ buildForm(): void {
 this.form = this.fb.group({
 firstName: new FormControl(''),
 lastName: new FormControl(''),
-jobTitle: new FormControl(''),
+club: new FormControl(''),
 level: new FormControl(''),
 agefrom: new FormControl(''),
 ageto: new FormControl('')
