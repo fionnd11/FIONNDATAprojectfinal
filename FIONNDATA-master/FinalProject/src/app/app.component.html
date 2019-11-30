@@ -1,0 +1,22 @@
+ <mat-toolbar color="primary"> 
+      <img alt="My image name" src="./assets/img/premierleague6.jpg"> 
+
+    <mat-toolbar-row>
+
+            <span class="title-center">
+        Players Application
+        
+    </span>
+      </mat-toolbar-row>
+      <mat-toolbar-row>
+  <button mat-button [routerLink]="['/create']" color="Warn">Create</button>
+  <button mat-button [routerLink]="['/read']">Read</button>
+  <button mat-button [routerLink]="['/search']">Search</button>
+  <button mat-button [routerLink]="['/news']">News</button>
+  <button mat-button [routerLink]="['/weather']">Forecast for fixtures</button>
+</mat-toolbar-row>
+ </mat-toolbar>
+ <span class="title-center">
+
+<router-outlet></router-outlet>
+<img alt="My image name" src="./assets/img/Premierleague10.jpg"> 

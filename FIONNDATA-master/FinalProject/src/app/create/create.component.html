@@ -1,0 +1,48 @@
+<mat-card>
+    <form (submit)="onAddPlayers(playersForm)" #playersForm="ngForm">
+      <mat-form-field>
+          <label> Player first name </label>
+        <input
+          matInput
+          type="text"
+          name="fname"
+          ngModel
+          required
+          #title="ngModel">
+      </mat-form-field>
+      <mat-form-field>
+          <label>Players last name</label>
+        <textarea
+          matInput
+          type='text'
+          name="lname"
+          ngModel
+          required
+          #content="ngModel"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <label>Players Age</label>
+          <textarea
+          matInput
+          name="age"
+          ngModel
+          required
+          #content="ngModel"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+        
+        <label>Players Club</label>
+        <textarea
+        matInput
+        name="club"
+        ngModel
+        required
+        #content="ngModel"></textarea>
+        
+      </mat-form-field>
+      <button
+        mat-raised-button
+        color="accent"
+        type="submit">Save Player</button>
+    </form>
+  </mat-card>

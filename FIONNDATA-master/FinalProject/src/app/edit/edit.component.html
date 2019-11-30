@@ -1,0 +1,47 @@
+<mat-card>
+    <form (submit)="onEditPlayers(playersForm)" #playersForm="ngForm">
+      <mat-form-field>
+          <label> First Name</label>
+        <input
+          matInput
+          type="text"
+          name="fname"
+          ngModel={{players.fname}}
+          required
+          #title="ngModel">
+      </mat-form-field>
+      <mat-form-field>
+          <label>Last Name</label>
+        <textarea
+          matInput
+          type='text'
+          name="lname"
+          ngModel={{players.lname}}
+          required
+          #content="ngModel"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+          <label>Age</label>
+        <textarea
+          matInput
+          name="age"
+          ngModel={{players.age}}
+          required
+          #content="ngModel"></textarea>
+      </mat-form-field>
+      <mat-form-field>
+      <label>Club</label>
+      <textarea
+        matInput
+       type="text"
+        name="club"
+        ngModel={{players.club}}
+        required
+        #content="ngModel"></textarea>
+    </mat-form-field>
+      <button
+        mat-raised-button
+        color="accent"
+        type="submit">Edit players</button>
+    </form>
+  </mat-card>
