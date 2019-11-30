@@ -17,8 +17,8 @@ import { UserService } from '../../services/user.service';
 export class SearchComponent implements OnInit {
 form: FormGroup;
   levels = [
-    "Premier League",
-    "EFL championship",
+    "Premier-League",
+    "EFL-Championship",
   ];
 @Output() groupFilters: EventEmitter<any> = new EventEmitter<any>();
 searchText: string = '';

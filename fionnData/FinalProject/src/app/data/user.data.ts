@@ -2,7 +2,7 @@ export const USERS = [
 {
     firstName: 'Sara',
     lastName: 'Barnett',
-    level: 'Premer League',
+    level: 'Premier-League',
     club: 'UI Designer',
     age:'18'
   },
