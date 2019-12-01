@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes} from '@angular/router';
+import {Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +26,8 @@ import {FormsModule} from '@angular/forms';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NewsComponent } from './news/news.component';
 import { WeatherComponent } from './weather/weather.component';
+import { from } from 'rxjs';
+import { MapsComponent } from './maps/maps.component';
 
 
 @NgModule({
@@ -35,9 +38,11 @@ import { WeatherComponent } from './weather/weather.component';
     EditComponent,
     HomePageComponent,
     NewsComponent,
-    WeatherComponent
+    WeatherComponent,
+    MapsComponent
   ],
   imports: [
+    Ng2SearchPipeModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,

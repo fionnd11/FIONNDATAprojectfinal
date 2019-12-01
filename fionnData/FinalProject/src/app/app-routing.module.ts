@@ -7,6 +7,8 @@ import { HomePageComponent } from 'src/app/home-page/home-page.component';
 
 import { NewsComponent } from './news/news.component';
 import { WeatherComponent } from './weather/weather.component';
+import { MapsComponent } from './maps/maps.component';
+import { from } from 'rxjs';
 
 
 const routes: Routes = [
@@ -38,7 +40,13 @@ const routes: Routes = [
 },
 {
   path:'search', loadChildren: './components/user/user.module#UserModule'
-}];
+},
+{
+  path:'maps',
+  component: MapsComponent
+},
+];
+
   
 
 

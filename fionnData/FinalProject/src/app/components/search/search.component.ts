@@ -14,14 +14,14 @@ import { UserService } from '../../services/user.service';
     `
   ]
 })
-//picking the option level for the player
+//picking the option level for the player e.g Premier-league/EFL-championship
 export class SearchComponent implements OnInit {
 form: FormGroup;
   levels = [
     "Premier-League",
     "EFL-Championship",
   ];
-  
+ //shows search results as outputs 
 @Output() groupFilters: EventEmitter<any> = new EventEmitter<any>();
 searchText: string = '';
 constructor(private fb: FormBuilder,

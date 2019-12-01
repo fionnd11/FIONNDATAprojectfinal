@@ -8,6 +8,8 @@ import { UserService } from '../../services/user.service';
 import { FilterPipe } from '../../pipe/filter.pipe';
 import { UserRoutes } from './user-routing.module';
 
+//filler pipe and user routes are being used for the search bar
+
 
 @NgModule({
   imports:      [ CommonModule, FormsModule, ReactiveFormsModule, UserRoutes ],

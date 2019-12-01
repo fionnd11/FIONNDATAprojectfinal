@@ -6,20 +6,27 @@ import { UserService } from '../../services/user.service';
   templateUrl: './user-list.component.html'
 })
 export class UserListComponent implements OnChanges {
+  //group filters is used to group search results together
 @Input() groupFilters: Object;
+//all my search object are string e.g firstname lastname 
 @Input() searchByKeyword: string;
 users: any[] = [];
+//filtering search results
 filteredUsers: any[] = [];
 constructor(private userService: UserService,
+  //used for filter searched results, and checks for changes
 private ref: ChangeDetectorRef) { }
 ngOnInit(): void {
 this.loadUsers();
 }
+//for filtering multiple search results search results
 ngOnChanges(): void {
 if (this.groupFilters) this.filterUserList(this.groupFilters, this.users);
 }
+//filters the user list
 filterUserList(filters: any, users: any): void {
-this.filteredUsers = this.users; //Reset User List
+  //this resets the user list!
+this.filteredUsers = this.users; 
 const keys = Object.keys(filters);
 const filterUser = user => {
 let result = keys.map(key => {

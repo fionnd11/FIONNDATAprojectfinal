@@ -1,0 +1,27 @@
+mat-form-field,
+
+textarea {
+  background-color: rgb(188, 204, 177);
+
+  width: 100%;
+
+} 
+mat-card {
+  background-color: rgb(95, 96, 119);
+
+
+}
+mat-expansion-panel-header{
+
+    background-color: rgb(188, 204, 177);
+}
+.search-players {
+
+  position: centre, absolute;
+  margin-left: 30%;
+  margin-right: 30%;
+width: 40%;
+border: 3px solid goldenrod;
+padding: 10px;
+text-align: center;
+}    

@@ -1,4 +1,7 @@
-<mat-accordion *ngFor="let players of MyPlayers">
+<div class="search-players">
+        <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Search for a player">
+      </div>
+<mat-accordion *ngFor="let players of MyPlayers | filter:searchText">
   <mat-expansion-panel [expanded]="true" >
       
       <mat-expansion-panel-header>

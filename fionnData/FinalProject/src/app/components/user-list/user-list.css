@@ -1,0 +1,8 @@
+table {  position: centre, absolute;
+margin-left: 30%;
+margin-right: 30%;
+width: 40%;
+border: 3px solid goldenrod;
+padding: 10px;
+text-align: center;
+}    

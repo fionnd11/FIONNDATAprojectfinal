@@ -1,4 +1,14 @@
+
 mat-form-field,
+
 textarea {
+  background-color: rgb(188, 204, 177);
+
   width: 100%;
+
+} 
+mat-card {
+  background-color: rgb(95, 96, 119);
+
+
 }

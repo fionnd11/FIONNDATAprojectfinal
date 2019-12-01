@@ -6,6 +6,8 @@ import { UserService } from '../../../services/user.service';
   selector: 'app-user-list',
   templateUrl: './user-list.component.html'
 })
+//calling the user list which has all of our data, all fields are strings which are being searche for
+
 export class UserListComponent implements OnChanges {
 @Input() groupFilters: Object;
 @Input() searchByKeyword: string;
@@ -20,13 +22,13 @@ ngOnChanges(): void {
 if (this.groupFilters) this.filterUserList(this.groupFilters, this.users);
 }
 filterUserList(filters: any, users: any): void {
-this.filteredUsers = this.users; //Reset User List
+this.filteredUsers = this.users; // this resets the user list Reset User List
 const keys = Object.keys(filters);
 const filterUser = user => {
 let result = keys.map(key => {
 if (!~key.indexOf('age')) {
 if(user[key]) {
-return String(user[key]).toLowerCase().startsWith(String(filters[key]).toLowerCase())
+return String(user[key]).toLowerCase().startsWith(String(filters[key]).toLowerCase()) // making it so the search is not case seneitive
 } else {
 return false;
 }
