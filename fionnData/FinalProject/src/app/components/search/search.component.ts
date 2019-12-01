@@ -14,6 +14,7 @@ import { UserService } from '../../services/user.service';
     `
   ]
 })
+//I have followed a tutorial from Dzone website to help me create this search bar!
 //picking the option level for the player e.g Premier-league/EFL-championship
 export class SearchComponent implements OnInit {
 form: FormGroup;
