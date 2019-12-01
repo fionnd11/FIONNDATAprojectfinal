@@ -26,5 +26,8 @@ players:any=[];
     console.log(form.value.title);
     this.playersService.UpdatePlayers(this.players._id, form.value.fname,
       form.value.lname, form.value.age, form.value.club).subscribe();
+      this.router.navigate(['/read']);
+
+      alert("You have successfully updated a players information");
   }
 }

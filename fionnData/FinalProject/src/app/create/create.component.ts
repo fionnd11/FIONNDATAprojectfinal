@@ -33,6 +33,9 @@ export class CreateComponent implements OnInit {
           //do something after out operation has finished
         }
       );
+      alert('You have successfully added a player to our database!');
+
+      form.resetForm();
     console.log(form.value);
     form.resetForm();
   }
